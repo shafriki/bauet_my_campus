@@ -29,6 +29,13 @@
         .roboto {
         font-family: "Roboto Slab", serif;
         }
+        @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .marquee {
+      animation: marquee 10s linear infinite;
+    }
      </style>
 
 </head>
@@ -56,23 +63,23 @@
              </nav>
          </div>
 
-         <div class="flex flex-col lg:flex-row items-center max-w-screen-xl mx-auto justify-between py-5">
+         <div class="flex flex-col lg:flex-row items-center max-w-screen-xl mx-auto justify-between py-5 lg:gap-20">
 
-            <img src="./images/abstract7.png" alt="" class="w-[80px] absolute top-[250px] left-5 lg:left-5 lg:top-24 opacity-30 lg:opacity-40">
-            <img src="./images/abstract-shape-1.png" alt="" class="w-[80px] absolute top-[70px] right-0 lg:left-[650px] lg:top-16 opacity-30 lg:opacity-40">
-            <img src="./images/bauet-shape-2.jpg" alt="" class="absolute w-[70px] lg:right-0 opacity-40 lg:top-24  lg:block top-[250px] right-0">
-            <img src="./images/bauet-pai.jpg" alt="" class="absolute w-[70px] top-[87px] lg:left-[800px] opacity-25 lg:opacity-40 lg:top-40 lg:block">
+            <img src="./images/abstract7.png" alt="" class="w-[80px] absolute top-[250px] left-5 lg:left-5 lg:top-36 opacity-30 lg:opacity-40">
+            <img src="./images/abstract-shape-1.png" alt="" class="w-[80px] absolute top-[70px] right-0 lg:left-[650px] lg:top-32 opacity-30 lg:opacity-40">
+            <img src="./images/bauet-shape-2.jpg" alt="" class="absolute w-[70px] lg:right-0 opacity-40 lg:top-24  lg:block top-[250px] right-2">
+            <img src="./images/bauet-pai.jpg" alt="" class="absolute w-[70px] top-[87px] lg:left-[800px] opacity-25 lg:opacity-40 lg:top-48 lg:block">
 
             <!-- logo content -->
             <div class="flex items-center gap-5">
                 <img src="./images/logo.png" alt="" class=" w-[70px] lg:w-[85px]">
-                <h3 class="lg:text-3xl font-bold roboto text-[#246B07]">Bangladesh Army University <br>
+                <h3 class="lg:text-2xl font-bold roboto text-[#246B07]">Bangladesh Army University <br>
                     of Engineering & Technology</h3>
             </div>
 
             <!-- button content -->
             <div class="grid grid-cols-2 lg:grid-cols-3 items-center gap-3 pt-10 px-10">
-                <button class="btn bg-[#377AB7] text-white ">I-EMS LOGIN</button>
+                <button class="btn bg-[#377AB7] text-white">I-EMS LOGIN</button>
                 <button class="btn bg-[#FD1361] text-white ">APPLY ONLINE</button>
                 <button class="btn bg-[#5BC0DE] text-white ">CRETIFICATE VERIFICATION</button>
                 <div class="lg:col-span-3 bg-slate-100 py-1 rounded-xl border border-slate-400 px-2"><i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Search" class="bg-slate-100 outline-none lg:py-2 lg:pl-3 w-3/6"></div>
@@ -98,8 +105,166 @@
              </nav>
              
          </div>
-         <i class="fa-solid fa-bars bg-blue-900 text-white py-1 px-3 mx-40 rounded-md text-2xl lg:hidden"></i>
+         
+        <div class="flex items-center max-w-screen-lg mx-auto border-x-2 border-purple-600 bg-purple-200">
+            <div class="flex items-center bg-blue-500 text-white border-x-2 border-purple-600"><p class="text-xs lg:text-xl font-medium px-3">Important Notice:</p></div>
+            <div class="flex items-center"><marquee behavior="" direction=""><p class="text-blue-950">বাউয়েট ওয়েলফেয়ার ক্লাবের উদ্যোগে বন্যার্তদের জন্য উপদেষ্টার ত্রাণ ও কল্যাণ তহবিলে অর্থ জমা প্রদান</p></marquee></div>
+        </div>
+
+         </div>
+         <i class="fa-solid fa-bars bg-blue-900 text-white py-1 px-3 mx-40 rounded-md text-2xl lg:hidden mt-5"></i>
         <!-- navbar section end -->
+
+        <!-- banner section start -->
+         <section class="mt-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 max-w-screen-lg mx-auto gap-10 px-5 lg:px-0">
+                
+                <!-- image section -->
+                <div class="carousel w-full lg:col-span-2 border-[6px] border-gray-400 shadow-2xl">
+                    <div id="slide1" class="carousel-item relative w-full">
+                        <img
+                          src="./images/IMG_0136.JPG"
+                          class="w-full " />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                          <a href="#slide4" class="btn btn-circle">❮</a>
+                          <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
+                      </div>
+                      <div id="slide2" class="carousel-item relative w-full">
+                        <img
+                          src="./images/IMG20240418102647.jpg"
+                          class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                          <a href="#slide1" class="btn btn-circle">❮</a>
+                          <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                      </div>
+                      <div id="slide3" class="carousel-item relative w-full">
+                        <img
+                          src="./images/DSC_0311.JPG"
+                          class="w-full" />
+                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                          <a href="#slide2" class="btn btn-circle">❮</a>
+                          <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                      </div>
+                  </div>
+
+                 <!-- notice section -->
+                  <div class="col-span-1">
+                    <div class="flex items-center justify-around">
+                        <p class="text-xl font-medium bg-purple-700 text-white px-7">Notice</p>
+                        <p class="text-xl font-medium bg-blue-700 text-white px-6">Exam</p>
+                        <p class="text-xl font-medium bg-indigo-700 text-white px-5">Tender</p>
+                    </div>
+
+                    <div class="h-72 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-900 scrollbar-track-gray-300">
+                        <!-- notice one -->
+                         <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">11</p>
+                                <p class="text-sm font-semibold text-white">SEP</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">সামার-২০২৪ সেমিস্টারের ফি প্রদানের সময়সীমা বৃদ্ধি প্রসংগে।</p>
+                             </div>
+                         </div>
+
+                         <!-- notice one -->
+                         <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">18</p>
+                                <p class="text-sm font-semibold text-white">JUL</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">ফল-২০২৪ সেমিস্টারে সরাসরি ভর্তির সুযোগ</p>
+                             </div>
+                         </div>
+
+                         <!-- notice one -->
+                         <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">16</p>
+                                <p class="text-sm font-semibold text-white">JUL</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">প্রজেক্টর এবং বৈদ্যুতিক যন্ত্রপাতি ব্যবহারের ক্ষেত্রে সর্তকতামূলক ব্যবস্থা</p>
+                             </div>
+                         </div>
+                         <!-- notice one -->
+                         <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">1</p>
+                                <p class="text-sm font-semibold text-white">AUG</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">Admission Notice Fall-2024 (Revised)</p>
+                             </div>
+                        </div>
+
+                        <!-- notice one -->
+                        <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">05</p>
+                                <p class="text-sm font-semibold text-white">SEP</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">সামার ২০২৪ সেমিস্টারের ফি প্রদানের সময়সীমা বৃদ্ধির নোটিশ (সংশোধিত)</p>
+                             </div>
+                        </div>
+
+                        <!-- notice one -->
+                        <div class="flex items-center gap-3 relative border-4 border-gray-400">
+                            <img src="./images/abs-card-1 (1).png" alt="" class="w-10 absolute top-0 right-10 rotate-180">
+                            <img src="./images/abs-card-1.png" alt="" class="w-10 absolute bottom-0 left-24">
+                            <!-- date -->
+                            <div class="flex flex-col items-center bg-blue-500 px-4 py-4">
+                                <p class="text-xl font-semibold text-white">21</p>
+                                <p class="text-sm font-semibold text-white">SEP</p>
+                                <p class="text-sm font-semibold text-white">2024</p>
+                            </div>
+
+                            <!-- notice -->
+                             <div class="py-3">
+                                <p class="text-base font-semibold">পবিত্র ঈদ-ই মিলাদুন্নবী (সাঃ) উপলক্ষে সাধারণ ছুটি প্রসংগে নোটিশ</p>
+                             </div>
+                        </div>
+                        <div class="flex items-center px-3 ml-24 pt-5">
+                            <a href="#" class="bg-blue-950 font-bold text-white pl-1">View All <i class="fa-solid fa-arrow-right bg-yellow-500 text-white p-2"></i></a>
+                        </div>
+            </div>
+         </section>
+        <!-- banner section end -->
 
      </header>
     <!-- header section end -->
